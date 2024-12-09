@@ -10,7 +10,8 @@ class Delete
     use Queueable;
 
     /**
-     * Create a new job instance.
+     * Удалить запись по ID
+     * @param int $notebook_id - Запись по ID
      */
     public function __construct(
         private int $notebook_id

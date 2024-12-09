@@ -10,7 +10,7 @@ class Index
     use Queueable;
 
     /**
-     * Create a new job instance.
+     * Загружаем все записи с пагинацией 4 элемента
      */
     public function __construct()
     {

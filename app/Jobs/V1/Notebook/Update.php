@@ -11,7 +11,14 @@ class Update
     use Queueable;
 
     /**
-     * Create a new job instance.
+     * Обновить запись по ID
+     * @param int $notebook_id - ID записи
+     * @param string $name - Имя
+     * @param string|null $company - Компания
+     * @param string $phone - Телефон
+     * @param string $email - Почта
+     * @param string|null $date_of_birth - Дата рождения
+     * @param UploadedFile|null $url - Фото
      */
     public function __construct(
         private int $notebook_id,

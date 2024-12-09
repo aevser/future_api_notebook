@@ -10,7 +10,8 @@ class Show
     use Queueable;
 
     /**
-     * Create a new job instance.
+     * Найти запись по ID
+     * @param int $notebook_id - ID записи
      */
     public function __construct(
         private int $notebook_id

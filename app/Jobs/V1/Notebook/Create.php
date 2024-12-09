@@ -11,8 +11,15 @@ class Create
     use Queueable;
 
     /**
-     * Create a new job instance.
+     * Создание записи
+     * @param string $name - Имя
+     * @param string|null $company - Компания
+     * @param string $phone - Телефон
+     * @param string $email - Почта
+     * @param string|null $date_of_birth - Дата рождения
+     * @param UploadedFile|null $url - Фото
      */
+
     public function __construct(
         private string $name,
         private ?string $company,
