@@ -22,6 +22,7 @@ class Index
      */
     public function handle()
     {
-        return Notebook::all();
+        $notebook = Notebook::paginate(4);
+        return $notebook;
     }
 }
